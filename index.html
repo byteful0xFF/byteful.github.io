@@ -2,24 +2,294 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
+    <!-- viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Byteful Is A Dev is a simple page made for the email domain @byteful.is-a.dev">
-    <meta name="keywords" content="byteful, dev, email, domain, tempmail">
+
+    <!-- primary metadata -->
+    <title>Byteful - Programmer, Musician, Reverse Engineer</title>
+    <meta name="title" content="Byteful - Programmer, Musician, Reverse Engineer">
+    <meta name="description" content="Byteful is a programmer, VR game developer, musician, and reverse engineer specializing in Unity, C#, Python, networking, and software research.">
+    <meta name="keywords" content="Byteful, Carbon612, Cyan, CyanPizza, Cyanide, Jeremy2050, programmer, Unity developer, VR developer, C#, Python, reverse engineering, music producer">
     <meta name="author" content="Byteful">
-    <title>Byteful Is A Dev</title>
+
+    <!-- theme -->
+    <meta name="theme-color" content="#00d9ff">
+
+    <!-- robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Byteful - Programmer, Musician, Reverse Engineer">
+    <meta property="og:description" content="Building VR games, software tools, music, and exploring how applications work.">
+    <meta property="og:url" content="https://yourdomain.com">
+    <meta property="og:image" content="https://yourdomain.com/banner.png">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
     <style>
-        body {
-            background-color: #ffffff;
-            color: #000000;
-            font-family: Arial, sans-serif;
-            text-align: left;
-            padding: 20px; /* Add some padding for better look */
+        * {
+            box-sizing: border-box;
         }
-        img { max-width: 100%; height: auto; } /* Responsive images */
+
+        body {
+            margin: 0;
+            background: #09090b;
+            color: #e5e7eb;
+            font-family: "JetBrains Mono", monospace;
+        }
+
+        a {
+            color: #00d9ff;
+            text-decoration: none;
+        }
+
+        header {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .hero h1 {
+            font-size: 70px;
+            margin: 0;
+            color: #00d9ff;
+            text-shadow: 0 0 25px #00d9ff;
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 700px;
+            opacity: .8;
+        }
+
+        .buttons a {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 20px;
+            border: 1px solid #00d9ff;
+            border-radius: 8px;
+            transition: .2s;
+        }
+
+        .buttons a:hover {
+            background: #00d9ff;
+            color: #09090b;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: auto;
+            padding: 80px 25px;
+        }
+
+        h2 {
+            color: #00d9ff;
+            font-size: 32px;
+        }
+
+        .card {
+            background: #111113;
+            border: 1px solid #222;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 20px 0;
+            transition: .2s;
+        }
+
+        .card:hover {
+            border-color: #00d9ff;
+            transform: translateY(-5px);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        ul {
+            line-height: 1.8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            opacity: .6;
+        }
+
+        .terminal {
+            color: #00d9ff;
+        }
+
+        @media(max-width:700px) {
+            .hero h1 {
+                font-size: 45px;
+            }
+        }
     </style>
 </head>
+
 <body>
-<h1>- Byteful Is A Dev -</h1>
-<p>This website is for the @byteful.is-a.dev domain. This website has like nothing on it tho. Go to <a href="https://is-a.dev/">https://is-a.dev/</a> for more information.</p>
+
+<header>
+    <div class="hero">
+        <h1>byteful<span class="terminal">_</span></h1>
+
+        <p>
+            programmer • musician • reverse engineer
+            <br><br>
+            building VR games, software tools, and experimenting
+            with how applications work.
+        </p>
+
+        <div class="buttons">
+            <a href="https://github.com/byteful0xff">github</a>
+            <a href="#">discord</a>
+            <a href="#">youtube</a>
+        </div>
+    </div>
+</header>
+
+
+<section>
+    <h2>about</h2>
+
+    <div class="card">
+        <p>
+            hey, i'm byteful.
+        </p>
+
+        <p>
+            also known as carbon612, cyan, cyanpizza,
+            cyanide, or jeremy2050.
+        </p>
+
+        <p>
+            i create games, tools, music, and explore
+            software internals through reverse engineering.
+            my main interests are unity development,
+            VR, networking, and security research.
+        </p>
+    </div>
+</section>
+
+
+<section>
+    <h2>projects</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>orange overload</h3>
+            <p>
+                multiplayer VR game built with Unity.
+            </p>
+
+            <ul>
+                <li>C#</li>
+                <li>Photon networking (sadly)</li>
+                <li>PlayFab</li>
+                <li>Meta Quest</li>
+            </ul>
+        </div>
+
+
+        <div class="card">
+            <h3>carbon.shield</h3>
+            <p>
+                anti-cheat and security research project.
+            </p>
+
+            <ul>
+                <li>client anticheats</li>
+                <li>server-sided anticheats</li>
+                <li>attestation</li>
+            </ul>
+        </div>
+
+
+        <div class="card">
+            <h3>music</h3>
+            <p>
+                electronic music production using FL Studio.
+            </p>
+        </div>
+
+
+    </div>
+</section>
+
+
+<section>
+    <h2>skills</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>languages</h3>
+            <ul>
+                <li>C#</li>
+                <li>Python</li>
+                <li>HTML</li>
+                <li>Scratch</li>
+            </ul>
+        </div>
+
+
+        <div class="card">
+            <h3>development</h3>
+            <ul>
+                <li>Unity</li>
+                <li>VR development</li>
+                <li>Photon</li>
+                <li>PlayFab</li>
+            </ul>
+        </div>
+
+
+        <div class="card">
+            <h3>research</h3>
+            <ul>
+                <li>Unity internals</li>
+                <li>software analysis</li>
+                <li>modding tools</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+
+<section>
+    <h2>contact</h2>
+
+    <div class="card">
+        <p>
+            interested in working together?
+        </p>
+
+        <p>
+            discord:
+            <a href="https://discord.gg/zeNyrnru">
+                cyanpizza
+            </a>
+        </p>
+    </div>
+</section>
+
+
+<footer>
+    © 2026 byteful
+</footer>
+
+
 </body>
 </html>
